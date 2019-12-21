@@ -32,7 +32,12 @@ The DBAccessor interface provides a way to open and close a connection with a da
 ## How To Use
 
 1) Get a copy of ojdbc8.jar (download from Oracle)
-2) put it into the directory with the Main, Manager, ... classes (not the entities package!)
+2) put it into the directory with the Main, Manager, ... classes (not the entities package!) so it looks (about) like this:
+```
+[heckelson@device src]$ ls
+DataGenerator.java  entities              Main.java     ojdbc8.jar                RandomSequenceGenerator.java
+DBAccessor.java     JDBC_DBAccessor.java  Manager.java  RandomDataGenerator.java
+```
 3) Compile:
 ```bash
 $ javac -classpath ojdbc8.jar:. *.java entities/*.java
