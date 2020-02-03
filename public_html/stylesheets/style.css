@@ -1,0 +1,147 @@
+/* stylesheets/style.css */
+
+:root {
+    --primarybg: #702830;
+    --primary: white;
+    --primaryacc: salmon;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+h1,h2,h3,h4,h5,h6,a,p,tr,label {
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #eeeeee;
+}
+
+td {
+    padding: 2px;
+    border: 1px solid #bbbbbb;
+    color: black;
+}
+
+.text-align-r {
+    text-align: right;
+}
+
+li {
+    list-style-type: none;
+}
+
+.debug {
+    border: 1px solid black;
+}
+
+.centered {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+}
+
+a, .clickable {
+    color: var(--primaryacc);
+}
+
+.floating {
+    margin: .5rem;
+    display: flex;
+}
+
+.card {
+    width: 25em;
+    border: 2px solid var(--primaryacc);
+    background-color: white;
+    padding: .5rem;
+    box-shadow: 1px 1px 4px grey;
+    display: flex;
+    flex-flow: column wrap;
+}
+
+.element {
+    border: 2px solid var(--primaryacc);
+    background-color: white;
+    padding: .5rem;
+    box-shadow: 1px 1px 4px grey;
+    display: flex;
+    flex-flow: column wrap;
+}
+
+.card:hover {
+    border: 2px solid var(--primarybg);
+}
+
+.card:hover {
+    color: var(--primarybg);
+}
+
+.card:hover .indented {
+    border-left: 5px solid var(--primarybg);
+}
+
+.searchbar {
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+.searchbar input {
+    margin: .5rem;
+}
+
+.indented {
+    padding-left: .5em;
+    border-left: 5px solid var(--primaryacc);
+}
+
+.logo {
+    flex: 0 0 0%;
+}
+
+.detail {
+    color: grey;
+    font-family: 'PT Mono', monospace;
+    font-size: 90%;
+}
+
+.vertical {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+}
+
+.vertical a {
+    margin-left: 1em;
+    margin-right: 1em;
+}
+
+.success {
+    color: green;
+    border: 2px solid green;
+    background-color: #DDFFDD;
+    margin: 2em;
+    padding: .2em;
+}
+
+#dbresults {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+
+header {
+    color: var(--primary);
+    background-color: var(--primarybg);
+    box-shadow: 0px 2px 4px grey;
+    margin-bottom: 1rem;
+}
+
+footer {
+    min-height: 50vh;
+}
